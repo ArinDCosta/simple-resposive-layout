@@ -14,6 +14,20 @@
             color: black;
 
        }
+       .login-form-container{
+        display: flex;
+        justify-content: center;
+       }
+       .login-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid salmon;
+        width: 50%;
+       }
+       .login-form input{
+        margin-top: 20px;
+       }
     </style>
 </head>
 <body>
@@ -26,11 +40,14 @@
         </div>
         <a href="">Login</a>
     </nav>
-    <form>
+
+   <section class="login-form-container">
+    <form class="login-form">
         <h3>Please Login</h3>
-        <input type="email" name="" id="" placeholder="Your Email">
-        <input type="password" name="" id="" placeholder="Your password"><br>
+        <input type="email" name="" id="" placeholder="Your Email" required>
+        <input type="password" name="" id="" placeholder="Your password"required>
         <input type="submit" value="Login">    
     </form>
+   </section>
     </body>
 </html>
