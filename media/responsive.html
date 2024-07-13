@@ -5,19 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
 </head>
+<style>
+    body{
+
+        border: 1px solid skyblue;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .image-container{
+        display: flex;
+    }
+    .image-container div{
+        width: 50%;
+    }
+    .image-container img{
+        width: 100%;
+    }
+    @media screen and ( max-width:576px) {
+        .image-container{
+            flex-direction: column;
+            .image-container div{
+                width: 100%;
+            }
+        }
+    }
+</style>
 <body>
     <header>
+        <h1> Responsive Website</h1>
         <ol>
             <li>viewport Meat tag</li>
             <li>CSS Relative Unit </li>
-            <li></li>
+            <li>Body max width and horizontal center align </li>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
         </ol>
     </header>
-    <main><img src="healtthy.png" alt="">
+    <main>
+        <div class="image-container">
+            <div><img src="healtthy.png"alt="">
+            </div>
+            <div><img src="tiger.webp" alt="">
+            </div>
+        </div>
     </main>
 </body>
 </html>
