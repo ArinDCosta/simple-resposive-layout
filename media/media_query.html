@@ -6,6 +6,27 @@
     <title>media query</title>
 </head>
 <body>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .food img{
+            width: 100%;
+        }
+        /* Smaller Device */
+        @media Screen and (max-width:576px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
     <!-- .container>.food*12>img[src="healtthy.png"]+h3{Food Items -$}+p{Price: \$$00}+p>lorem20^btn{Buy Now} -->
   <div class="container">
     <div class="food">
